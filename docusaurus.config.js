@@ -98,15 +98,15 @@ const config = {
             items: [
               {
                 label: '软件',
-                to: '/docs/intro',
+                to: '/docs/software/unix-v1',
               },
               {
                 label: '文档',
-                to: 'docs/intro',
+                to: 'docs/document/index',
               },
               {
                 label: '图片',
-                to: 'docs/intro',
+                to: 'docs/images/index',
               }
             ],
           },
