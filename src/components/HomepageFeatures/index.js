@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '收录',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        站点收录了自计算机发明以来富有历史意义的“古董”软件，包括操作系统、编译器、文本编辑器和专业软件等。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '体验',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        被收录软件会以可执行文件的方式保存在本站点以供访问者体验。如果无法提供某些软件的可运行环境，站点会提供源码以供参考。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '资料',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        本站点会提供被收录软件的相关资料，包括操作手册、图片和设计文档等。
       </>
     ),
   },

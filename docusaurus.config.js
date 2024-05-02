@@ -8,20 +8,17 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'CyberMuseum',
+  tagline: '一个专注于收藏计算机古董的网站',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://littlebutt.github.io',
+
   baseUrl: '/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'littlebutt',
+  projectName: 'littlebutt.github.io',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -30,8 +27,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['en', 'zh-Hans'],
   },
 
   presets: [
@@ -41,18 +38,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -66,22 +53,39 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'CyberMuseum',
+        style: 'dark',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'CyberMuseum Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'softwareSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '软件',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'docSidebar',
+            sidebarId: 'documentSidebar',
+            position: 'left',
+            label: '文档',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'imagesSidebar',
+            position: 'left',
+            label: '图片',
+          },
+          {
+            href: 'https://github.com/littlebutt/littlebutt.github.io',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://www.zhihu.com/column/c_1731312077246033920',
+            label: '知乎',
             position: 'right',
           },
         ],
@@ -90,46 +94,46 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '导航',
             items: [
               {
-                label: 'Tutorial',
+                label: '软件',
                 to: '/docs/intro',
               },
+              {
+                label: '文档',
+                to: 'docs/intro',
+              },
+              {
+                label: '图片',
+                to: 'docs/intro',
+              }
             ],
           },
           {
-            title: 'Community',
+            title: '联系',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Github',
+                href: 'https://github.com/littlebutt',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: '知乎',
+                href: 'https://www.zhihu.com/people/luo-gan-5-62',
               },
             ],
           },
           {
-            title: 'More',
+            title: '外部链接',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
+                label: 'Unix Playground',
+                href: 'http://43.156.106.117:8000/unix-v1'
+              }
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} littlebutt. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
