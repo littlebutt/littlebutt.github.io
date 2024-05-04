@@ -1,3 +1,9 @@
+---
+id: unix-v1
+title: 重现第一代Unix系统
+tags: [unix, operating system]
+---
+
 
 # 重现第一代Unix系统
 
