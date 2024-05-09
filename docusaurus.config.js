@@ -129,6 +129,10 @@ const config = {
               {
                 label: 'Unix Playground',
                 href: 'http://43.156.106.117:8000/unix-v1'
+              },
+              {
+                label: 'Python 0.9.1 Playground',
+                href: 'http://43.156.106.117:8000/python-091'
               }
             ]
           }
